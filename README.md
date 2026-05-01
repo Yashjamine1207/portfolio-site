@@ -1,36 +1,105 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Yash Jamine — Engineering Portfolio
 
-## Getting Started
+A world-class, technically credible engineering portfolio website built with **Next.js 16**, **Tailwind CSS v4**, and **React Three Fiber (Three.js)**.
 
-First, run the development server:
+## 🚀 Quick Start
 
 ```bash
+# Install dependencies
+npm install
+
+# Start development server
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+# → http://localhost:3000
+
+# Build for production
+npm run build
+
+# Start production server
+npm start
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 📦 Tech Stack
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+| Layer | Technology |
+|-------|-----------|
+| Framework | Next.js 16.2.4 (App Router) |
+| Styling | Tailwind CSS v4 + Custom CSS Design System |
+| 3D | React Three Fiber + Three.js + Drei |
+| Fonts | Inter + JetBrains Mono (Google Fonts) |
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 🗂 Project Structure
 
-## Learn More
+```
+portfolio-site/
+├── public/                    # Static assets
+├── src/
+│   ├── app/
+│   │   ├── globals.css        # Design system (CSS variables, cards, etc.)
+│   │   ├── layout.js          # Root layout, metadata, fonts
+│   │   └── page.js            # Main page (all sections)
+│   ├── components/
+│   │   ├── Navbar.jsx         # Sticky blur nav + mobile menu
+│   │   ├── Hero.jsx           # Hero section + CTAs
+│   │   ├── HeroScene.jsx      # Three.js 3D wireframe scene
+│   │   ├── About.jsx          # Professional summary
+│   │   ├── CoreStrengths.jsx  # 4 capability pillars
+│   │   ├── FeaturedProjects.jsx # 8 expandable case studies
+│   │   ├── AIDigitalTwin.jsx  # AI/ML project section
+│   │   ├── Internships.jsx    # 5 experience cards
+│   │   ├── CurrentResearch.jsx # MSc thesis
+│   │   ├── AdditionalProjects.jsx # Compact project cards
+│   │   ├── ToolsMethods.jsx   # Technical toolkit
+│   │   ├── Contact.jsx        # Contact details + CTAs
+│   │   ├── Footer.jsx         # Professional footer
+│   │   ├── ThemeToggle.jsx    # Dark/light mode toggle
+│   │   └── ScrollReveal.jsx   # Intersection Observer animations
+│   └── data/
+│       ├── projects.js        # All project data
+│       ├── internships.js     # Internship/research data
+│       └── tools.js           # Tools + current research data
+├── package.json
+├── next.config.mjs
+├── postcss.config.mjs
+├── jsconfig.json
+├── eslint.config.mjs
+└── .gitignore
+```
 
-To learn more about Next.js, take a look at the following resources:
+## ✨ Features
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- **3D Hero Scene** — Wireframe engineering sculpture with particle effects
+- **Dark / Light Mode** — CSS variable theming with localStorage persistence
+- **Expandable Project Cards** — Click to reveal full case study details
+- **Scroll Reveal Animations** — Intersection Observer with reduced-motion support
+- **Responsive Design** — Mobile-first with breakpoints at 640px and 768px
+- **SEO Optimised** — Meta tags, Open Graph, semantic HTML
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 🌐 Deploy to Vercel
 
-## Deploy on Vercel
+```bash
+# Install Vercel CLI
+npm i -g vercel
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+# Deploy
+vercel
+```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Or connect the GitHub repository to [vercel.com](https://vercel.com) for automatic deployments.
+
+## 📋 Dependencies
+
+### Production
+- `next` — React framework with SSR/SSG
+- `react` / `react-dom` — UI library
+- `three` — 3D graphics engine
+- `@react-three/fiber` — React renderer for Three.js
+- `@react-three/drei` — Useful helpers for R3F
+
+### Development
+- `tailwindcss` / `@tailwindcss/postcss` — Utility-first CSS
+- `eslint` / `eslint-config-next` — Linting
+
+## 📝 License
+
+All content © Yash Jamine. Project outcomes derived from verified engineering work.
