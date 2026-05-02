@@ -9,7 +9,7 @@ function WireframeMesh() {
   const meshRef = useRef();
   const pointsRef = useRef();
 
-  // Create an elegant toroidal knot — engineering aesthetic
+  // Create an elegant toroidal knot: engineering aesthetic
   const geometry = useMemo(() => {
     const geo = new THREE.TorusKnotGeometry(2.2, 0.6, 200, 32, 2, 3);
     return geo;
@@ -53,7 +53,7 @@ function WireframeMesh() {
             opacity={0.12}
           />
         </mesh>
-        {/* Solid inner core — subtle */}
+        {/* Solid inner core: subtle */}
         <mesh geometry={geometry}>
           <meshStandardMaterial
             color="#00d4aa"

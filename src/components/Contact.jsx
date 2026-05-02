@@ -22,7 +22,7 @@ export default function Contact() {
           }}
         >
           I'm actively seeking graduate mechanical engineering roles in the UK
-          and Europe — particularly in simulation, design, AI/ML, and digital
+          and Europe, particularly in simulation, design, AI/ML, and digital
           twin applications. Open to conversations about opportunities, research
           collaborations, or engineering challenges.
         </p>

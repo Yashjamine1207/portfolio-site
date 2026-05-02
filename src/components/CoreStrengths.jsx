@@ -4,41 +4,41 @@ const PILLARS = [
   {
     icon: "🔬",
     title: "Simulation & Analysis",
-    description: "FEA, CFD, FSI, fracture mechanics — from mesh convergence to validated engineering decisions",
+    description: "FEA, CFD, FSI, fracture mechanics: from mesh convergence to validated engineering decisions",
     evidence: [
-      "Penstock fracture assessment — 52.3-year fatigue life, SF 8.28",
-      "Heat exchanger CFD — 2.34× heat duty increase",
-      "Wind turbine FEA — IEC 61400-1 compliance, FoS 2.8",
+      "Penstock fracture assessment: 52.3-year fatigue life, SF 8.28",
+      "Heat exchanger CFD: 2.34× heat duty increase",
+      "Wind turbine FEA: IEC 61400-1 compliance, FoS 2.8",
     ],
   },
   {
     icon: "🧠",
     title: "AI & Machine Learning",
-    description: "DNNs, Transformers, XGBoost, MoE — engineering-specific ML that respects physics",
+    description: "DNNs, Transformers, XGBoost, MoE: engineering-specific ML that respects physics",
     evidence: [
-      "Turbofan DNN — MSE 7.179×10⁻⁹ (99.39% error reduction)",
-      "Battery BTMS MoE model — R² 0.848, 90.38% predictions within 2°C",
-      "Erosion surrogate — R² = 97.23%, 75% fewer experiments via Taguchi L16",
+      "Turbofan DNN: MSE 7.179×10⁻⁹ (99.39% error reduction)",
+      "Battery BTMS MoE model: R² 0.848, 90.38% predictions within 2°C",
+      "Erosion surrogate: R² = 97.23%, 75% fewer experiments via Taguchi L16",
     ],
   },
   {
     icon: "⚡",
     title: "Testing & Instrumentation",
-    description: "Real hardware, real signals — vibration DAQ, high-speed imaging, composites characterisation",
+    description: "Real hardware, real signals: vibration DAQ, high-speed imaging, composites characterisation",
     evidence: [
       "NI myRIO 20 kHz vibration acquisition + fault detection",
-      "Photron FASTCAM — 20k–50k fps impact analysis",
-      "Composite TLM — 0.80% MAPE electrical characterisation",
-      "BOSCH 3D printing — PLA 0.08 mm on 100 mm feature",
+      "Photron FASTCAM: 20k–50k fps impact analysis",
+      "Composite TLM: 0.80% MAPE electrical characterisation",
     ],
   },
   {
     icon: "✏️",
     title: "Design & Manufacturing",
-    description: "SolidWorks, DFM, tolerance analysis, composites fabrication — concept through prototype",
+    description: "SolidWorks, DFM, tolerance analysis, composites fabrication: concept through prototype",
     evidence: [
-      "Rail trolley — full mechanical design, £719.87 BOM, 18.7 kg",
-      "Composite tube CLT — 10,404 layup combinations evaluated",
+      "Rail trolley: full mechanical design, £719.87 BOM, 18.7 kg",
+      "Composite tube CLT: 10,404 layup combinations evaluated",
+      "BOSCH 3D printing: PLA 0.08 mm on 100 mm feature",
       "Vacuum bagging + resin infusion fabrication (DRDO internship)",
       "Additive manufacturing characterisation (PLA, PET-G, TPU)",
     ],
@@ -51,7 +51,7 @@ export default function CoreStrengths() {
       <p className="section-label">Core Strengths</p>
       <h2 className="section-title">Four pillars of engineering capability</h2>
       <p className="section-subtitle" style={{ marginBottom: "3rem" }}>
-        Each capability is demonstrated through multiple validated projects — not claimed, proven.
+        Each capability is demonstrated through multiple validated projects: not claimed, proven.
       </p>
 
       <div

@@ -11,7 +11,7 @@ export default function ToolsMethods() {
         <span className="text-accent">toolkit</span>
       </h2>
       <p className="section-subtitle" style={{ marginBottom: "3rem" }}>
-        Grouped by engineering workflow — from CAD to deployment.
+        Grouped by engineering workflow, from CAD to deployment.
       </p>
 
       <div

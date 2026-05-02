@@ -51,7 +51,7 @@ export default function Hero() {
               marginBottom: "1.25rem",
             }}
           >
-            MSc Mechanical Engineering Design — University of Manchester
+            MSc Mechanical Engineering Design, University of Manchester
           </p>
 
           {/* Name */}
@@ -73,7 +73,7 @@ export default function Hero() {
               marginBottom: "2.5rem",
             }}
           >
-            I design, simulate, test, and optimise mechanical systems — then build
+            I design, simulate, test, and optimise mechanical systems. I also build
             AI tools that make the entire process faster, safer, and more precise.
           </p>
 

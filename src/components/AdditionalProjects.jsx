@@ -33,7 +33,7 @@ export default function AdditionalProjects() {
                 marginBottom: "0.5rem",
               }}
             >
-              {project.date} — {project.context}
+              {project.date} | {project.context}
             </p>
             <h3
               style={{

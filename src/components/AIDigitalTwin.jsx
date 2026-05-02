@@ -14,7 +14,7 @@ export default function AIDigitalTwin() {
         <span className="text-accent">respects physics</span>
       </h2>
       <p className="section-subtitle" style={{ marginBottom: "3rem" }}>
-        Advanced AI/ML projects that go beyond standard data science — these systems encode
+        Advanced AI/ML projects that go beyond standard data science. These systems encode
         physical laws, enforce safety constraints, and integrate with real-time control architectures.
       </p>
 
@@ -50,7 +50,7 @@ export default function AIDigitalTwin() {
                         marginBottom: "0.4rem",
                       }}
                     >
-                      {project.date} — {project.context}
+                      {project.date} | {project.context}
                     </p>
                     <h3
                       style={{

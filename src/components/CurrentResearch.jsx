@@ -7,7 +7,7 @@ export default function CurrentResearch() {
     <section id="research" className="section">
       <p className="section-label">Current Research</p>
       <h2 className="section-title">
-        MSc Thesis —{" "}
+        MSc Thesis:{" "}
         <span className="text-accent">Ongoing</span>
       </h2>
 
@@ -33,7 +33,7 @@ export default function CurrentResearch() {
               {currentResearch.title}
             </h3>
             <p className="mono" style={{ fontSize: "0.75rem", color: "var(--accent)" }}>
-              {currentResearch.degree} — {currentResearch.university}
+              {currentResearch.degree}, {currentResearch.university}
             </p>
             <p style={{ fontSize: "0.8rem", color: "var(--muted)", marginTop: "0.25rem" }}>
               Supervised by {currentResearch.supervisor} | {currentResearch.date}

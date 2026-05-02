@@ -1,13 +1,13 @@
 import "./globals.css";
 
 export const metadata = {
-  title: "Yash Jamine — Mechanical Engineer | Simulation · AI · Design",
-  description: "Portfolio of Yash Jamine — MSc Mechanical Engineering Design, University of Manchester. Bridging structural analysis, computational simulation, and AI-driven optimisation for next-generation engineering.",
+  title: "Yash Jamine, Mechanical Engineer | Simulation · AI · Design",
+  description: "Portfolio of Yash Jamine, MSc Mechanical Engineering Design, University of Manchester. Bridging structural analysis, computational simulation, and AI-driven optimisation for next-generation engineering.",
   keywords: "mechanical engineer, FEA, CFD, machine learning, digital twin, portfolio, University of Manchester",
   authors: [{ name: "Yash Jamine" }],
   openGraph: {
-    title: "Yash Jamine — Mechanical Engineer",
-    description: "Simulation · AI · Design — Engineering portfolio",
+    title: "Yash Jamine, Mechanical Engineer",
+    description: "Simulation · AI · Design, Engineering portfolio",
     type: "website",
   },
 };

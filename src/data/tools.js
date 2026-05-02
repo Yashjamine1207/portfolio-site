@@ -31,7 +31,7 @@ export const toolCategories = [
   },
   {
     category: "Manufacturing",
-    tools: ["3D Printing (FDM — PLA, PET-G, TPU)", "Laser cutting", "Vacuum bagging", "Resin infusion", "Autoclave"],
+    tools: ["3D Printing (FDM: PLA, PET-G, TPU)", "Laser cutting", "Vacuum bagging", "Resin infusion", "Autoclave"],
     icon: "🏭",
   },
   {
@@ -42,15 +42,15 @@ export const toolCategories = [
 ];
 
 export const currentResearch = {
-  title: "Forward-Swept Composite Wing — ML-Enhanced Aeroelastic Optimisation",
+  title: "Forward-Swept Composite Wing: ML-Enhanced Aeroelastic Optimisation",
   degree: "MSc Mechanical Engineering Design",
   university: "University of Manchester",
   supervisor: "Dr. Zhenmin Zou",
-  date: "Mar 2026 – Aug 2026 (ongoing)",
-  problem: "Forward-swept wings offer significant aerodynamic benefits but suffer from aeroelastic divergence — a catastrophic instability where aerodynamic forces amplify structural deformation. The composite laminate design space is >10¹² configurations for a 20-ply wing, rendering traditional optimisation intractable.",
+  date: "Apr 2026 – Sep 2026 (ongoing)",
+  problem: "Forward-swept wings offer significant aerodynamic benefits but suffer from aeroelastic divergence, which is a dangerous instability where aerodynamic forces make the wing bend more and more until it fails. The composite laminate design space is >10¹² configurations for a 20-ply wing, making standard optimisation methods too slow to work.",
   approach: [
     "Phase 1: MATLAB aeroelastic framework (CLPT + beam models + aerodynamic loading) validated against NASA X-29 data",
-    "Phase 2: Neural network + gradient boosting surrogates for divergence speed prediction — targeting 100–1000× speedup vs physics solver",
+    "Phase 2: Neural network + gradient boosting surrogates for divergence speed prediction, targeting 100–1000× speedup vs physics solver",
     "Phase 3: Multi-objective optimisation (max divergence speed, min weight) using genetic algorithms + Bayesian optimisation on ML surrogates",
     "Phase 4 (exploratory): Generative AI/LLM for laminate sequence design",
     "Phase 5: Streamlit dashboard for real-time ML-based performance prediction",

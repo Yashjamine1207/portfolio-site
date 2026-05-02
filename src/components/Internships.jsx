@@ -62,7 +62,7 @@ export default function Internships() {
                         marginBottom: "0.25rem",
                       }}
                     >
-                      {intern.role} — {intern.location}
+                      {intern.role}, {intern.location}
                     </p>
                     <p
                       style={{

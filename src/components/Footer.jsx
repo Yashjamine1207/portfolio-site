@@ -29,7 +29,7 @@ export default function Footer() {
             margin: "0 auto 1rem",
           }}
         >
-          Mechanical Engineer — MSc Mechanical Engineering Design, University of Manchester.
+          Mechanical Engineer, MSc Mechanical Engineering Design, University of Manchester.
           Designed, simulated, tested, and optimised.
         </p>
         <p

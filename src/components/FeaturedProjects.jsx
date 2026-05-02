@@ -6,7 +6,7 @@ import { featuredProjects } from "@/data/projects";
 function ProjectCard({ project, isOpen, onToggle }) {
   return (
     <div className="card" style={{ padding: 0, overflow: "hidden" }}>
-      {/* Header — always visible */}
+      {/* Header: always visible */}
       <div
         onClick={onToggle}
         style={{
@@ -36,7 +36,7 @@ function ProjectCard({ project, isOpen, onToggle }) {
                 marginBottom: "0.4rem",
               }}
             >
-              {project.date} — {project.context}
+              {project.date} | {project.context}
             </p>
             <h3
               style={{
