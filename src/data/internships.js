@@ -38,7 +38,7 @@ export const internships = [
   {
     id: "mnit-research",
     company: "MNIT Jaipur — Mechanical Engineering Dept.",
-    role: "Undergraduate Research Intern",
+    role: "Research Intern",
     location: "Jaipur, India",
     date: "Jan 2025 – May 2025",
     duration: "6 weeks",
@@ -76,7 +76,7 @@ export const internships = [
     company: "AnyFeast (Practera Micro-Internship)",
     role: "Sustainability Consultant — Team Evergreen",
     location: "Remote (London-based startup)",
-    date: "Mar 2026",
+    date: "Mar 2026 – Apr 2026",
     duration: "4 weeks",
     domain: "ESG / Sustainability / Consulting / Food Tech",
     tools: ["Market research", "GRI Standards", "KPI framework design", "Stakeholder communication"],

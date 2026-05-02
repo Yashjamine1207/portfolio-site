@@ -6,7 +6,6 @@ const PILLARS = [
     title: "Simulation & Analysis",
     description: "FEA, CFD, FSI, fracture mechanics — from mesh convergence to validated engineering decisions",
     evidence: [
-      "F1 wing 2-way FSI — 2,415 N downforce, 35% deflection reduction",
       "Penstock fracture assessment — 52.3-year fatigue life, SF 8.28",
       "Heat exchanger CFD — 2.34× heat duty increase",
       "Wind turbine FEA — IEC 61400-1 compliance, FoS 2.8",
@@ -15,12 +14,11 @@ const PILLARS = [
   {
     icon: "🧠",
     title: "AI & Machine Learning",
-    description: "DNNs, PINNs, Transformers, XGBoost, RL — engineering-specific ML that respects physics",
+    description: "DNNs, Transformers, XGBoost, MoE — engineering-specific ML that respects physics",
     evidence: [
       "Turbofan DNN — MSE 7.179×10⁻⁹ (99.39% error reduction)",
-      "PINN — zero thermodynamic violations (vs +12% LSTM hallucination)",
-      "TFT RUL prediction — 7.26 cycle RMSE (74.8% improvement)",
-      "Agentic RL — 12.8% fuel reduction, 0 safety violations",
+      "Battery BTMS MoE model — R² 0.848, 90.38% predictions within 2°C",
+      "Erosion surrogate — R² = 97.23%, 75% fewer experiments via Taguchi L16",
     ],
   },
   {
@@ -41,7 +39,7 @@ const PILLARS = [
     evidence: [
       "Rail trolley — full mechanical design, £719.87 BOM, 18.7 kg",
       "Composite tube CLT — 10,404 layup combinations evaluated",
-      "Vacuum bagging + resin infusion fabrication at Manchester NCEM",
+      "Vacuum bagging + resin infusion fabrication (DRDO internship)",
       "Additive manufacturing characterisation (PLA, PET-G, TPU)",
     ],
   },
