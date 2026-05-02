@@ -55,7 +55,7 @@ export const internships = [
   {
     id: "iisc",
     company: "Indian Institute of Science (IISc), Bangalore",
-    role: "Research Intern: Impact Analysis of Soft Hydrogel Balls",
+    role: "Research Intern, Impact Analysis of Soft Hydrogel Balls",
     date: "Dec 2023 – Jan 2024",
     domain: "Experimental Mechanics / High-Speed Testing / Prototyping",
     tools: ["SolidWorks", "Photron FASTCAM", "Drop test rig / impact setup"],

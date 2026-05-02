@@ -6,6 +6,8 @@ import { aiProjects } from "@/data/projects";
 export default function AIDigitalTwin() {
   const [openId, setOpenId] = useState(null);
 
+  if (aiProjects.length === 0) return null;
+
   return (
     <section id="ai" className="section">
       <p className="section-label">AI & Digital Twin Track</p>
