@@ -26,12 +26,12 @@ export const toolCategories = [
   },
   {
     category: "Testing & Instrumentation",
-    tools: ["NI myRIO / LabVIEW FPGA", "Accelerometers (ADXL345, MPU-6050)", "Phantom high-speed cameras", "Force sensors", "Oscilloscope"],
+    tools: ["NI myRIO / LabVIEW FPGA", "Accelerometers (ADXL345, MPU-6050)", "Photron FASTCAM high-speed camera", "Force sensors", "Oscilloscope"],
     icon: "⚡",
   },
   {
     category: "Manufacturing",
-    tools: ["3D Printing (FDM — PLA, ABS, TPU)", "Laser cutting", "Vacuum bagging", "Resin infusion", "Autoclave"],
+    tools: ["3D Printing (FDM — PLA, PET-G, TPU)", "Laser cutting", "Vacuum bagging", "Resin infusion", "Autoclave"],
     icon: "🏭",
   },
   {

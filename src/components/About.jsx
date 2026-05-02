@@ -14,7 +14,7 @@ export default function About() {
 
         <div style={{ display: "grid", gap: "1.5rem" }}>
           <p style={{ fontSize: "1.05rem", lineHeight: 1.8, color: "var(--muted)" }}>
-            I'm a Mechanical Engineering graduate completing my MSc at the University of Manchester,
+            I'm a Mechanical Engineering MSc student at the University of Manchester,
             where I specialise in bridging traditional engineering rigour with modern AI/ML capability.
             My work sits at the intersection of <strong style={{ color: "var(--foreground)" }}>structural analysis</strong>,{" "}
             <strong style={{ color: "var(--foreground)" }}>computational simulation</strong>,{" "}
@@ -24,17 +24,16 @@ export default function About() {
 
           <p style={{ fontSize: "1.05rem", lineHeight: 1.8, color: "var(--muted)" }}>
             What makes my approach distinct is the integration. I don't just run FEA or train neural
-            networks — I build end-to-end systems where physics-based simulation generates data,
-            ML surrogates replace expensive computation, and constrained optimisers find solutions
-            that respect real engineering boundaries. Every project delivers quantified outcomes
-            against defined targets.
+            networks. I build complete systems where physics simulation produces the data,
+            ML models make the computation faster, and optimisers find practical engineering
+            answers. Every project I do has clear numbers to prove the result.
           </p>
 
           <p style={{ fontSize: "1.05rem", lineHeight: 1.8, color: "var(--muted)" }}>
-            I've worked across vibration diagnostics, aerospace propulsion, rail infrastructure,
-            battery thermal management, structural integrity, composites, and manufacturing — with
-            hands-on experience at <strong style={{ color: "var(--foreground)" }}>Robert Bosch Engineering</strong> and
-            research roles at Manchester and MNIT Jaipur.
+            I have worked on projects covering vibration diagnostics, aerospace propulsion, rail vehicle
+            design, battery thermal systems, structural integrity, composites manufacturing, and additive
+            manufacturing. I have had hands-on experience at <strong style={{ color: "var(--foreground)" }}>Robert Bosch Engineering</strong> and
+            research internships at IISc Bangalore and MNIT Jaipur.
           </p>
         </div>
 

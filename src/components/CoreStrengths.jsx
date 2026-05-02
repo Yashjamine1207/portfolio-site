@@ -29,7 +29,7 @@ const PILLARS = [
     description: "Real hardware, real signals — vibration DAQ, high-speed imaging, composites characterisation",
     evidence: [
       "NI myRIO 20 kHz vibration acquisition + fault detection",
-      "Phantom cameras — 20k–50k fps impact analysis",
+      "Photron FASTCAM — 20k–50k fps impact analysis",
       "Composite TLM — 0.80% MAPE electrical characterisation",
       "BOSCH 3D printing — PLA 0.08 mm on 100 mm feature",
     ],
@@ -42,7 +42,7 @@ const PILLARS = [
       "Rail trolley — full mechanical design, £719.87 BOM, 18.7 kg",
       "Composite tube CLT — 10,404 layup combinations evaluated",
       "Vacuum bagging + resin infusion fabrication at Manchester NCEM",
-      "Additive manufacturing characterisation (ABS, PLA, TPU)",
+      "Additive manufacturing characterisation (PLA, PET-G, TPU)",
     ],
   },
 ];
