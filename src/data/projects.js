@@ -13,11 +13,9 @@ export const featuredProjects = [
     problem: "Required validating a complete vibration diagnostic chain from physical sensors through FPGA-based data acquisition to MATLAB-based fault detection on a Machinery Fault Simulator.",
     approach: "Designed custom 3D-printed sensor mounts for consistent accelerometer placement, configured NI myRIO at 20 kHz acquisition rate, implemented multiple spectral analysis methods for comparison.",
     results: [
-      { metric: "Dominant fault frequency recovery", value: "29.63 Hz ± 0.2%", target: "Known 1× RPM" },
+      { metric: "Dominant fault frequency recovery", value: "1× RPM spectral peak clearly identified at 29.63 Hz ± 0.2%", target: "Known 1× RPM" },
       { metric: "2× harmonic recovery (misalignment)", value: "59.20 Hz", target: "Detect" },
       { metric: "RMS sensitivity increase (imbalance)", value: "+12.9%", target: "Detectable shift" },
-      { metric: "Bearing defect frequency identification", value: "BPFO at 107.5 Hz", target: "Match theoretical" },
-      { metric: "Goertzel vs FFT accuracy", value: "Within 0.3%", target: "Equivalent" },
     ],
     impact: "Demonstrated end-to-end physical instrumentation to digital diagnostic capability — not simulation, not software-only, but real sensor-real signal-real fault detection.",
     categories: ["testing", "signal-processing", "instrumentation"],
@@ -32,15 +30,12 @@ export const featuredProjects = [
     team: "Team of 4; ownership ~50%",
     domain: "Aerospace Propulsion / Machine Learning / Multi-Objective Optimisation",
     tools: ["Python", "TensorFlow/Keras", "SciPy", "NumPy", "Pandas", "Plotly", "Streamlit"],
-    methods: ["Deep Neural Networks (5-layer, 128 neurons)", "NSGA-II", "Particle Swarm Optimisation", "Differential Evolution", "Bayesian Optimisation", "Physics-informed feature engineering"],
-    problem: "Turbofan bypass ratio optimisation involves a 14-dimensional design space with coupled, non-linear thermodynamic interactions. Full-fidelity simulation takes hours per design point, making exploration of the design space computationally prohibitive.",
+    methods: ["Deep Neural Networks", "Jaya", "Genetic Algorithm", "Cuckoo Search", "Harmony Search", "Tabu Search", "Physics-informed feature engineering"],
+    problem: "Turbofan/compressor efficiency prediction traditionally relies on costly experimentation and manual tuning. A faster predictive model was needed using optimised DNN architecture.",
     approach: "Built a DNN surrogate trained on NASA C-MAPSS data to replace expensive simulations, then used it as the objective function for multi-algorithm metaheuristic comparison.",
     results: [
-      { metric: "DNN surrogate MSE", value: "7.179×10⁻⁹", target: "<10⁻⁷" },
+      { metric: "DNN surrogate MSE", value: "7.179×10⁻¹⁰", target: "<10⁻⁷" },
       { metric: "Error reduction vs linear baseline", value: "99.39%", target: "Maximise" },
-      { metric: "R² on test set", value: "0.9987", target: ">0.99" },
-      { metric: "NSGA-II Pareto front", value: "50 non-dominated solutions", target: "Generate" },
-      { metric: "Optimised SFC improvement", value: "5.2% reduction", target: "Maximise" },
     ],
     impact: "Proved that DNN surrogates can replace computationally expensive thermodynamic simulations with 99.39% error reduction, enabling real-time design space exploration.",
     categories: ["ai-ml", "aerospace", "optimisation"],
@@ -49,7 +44,7 @@ export const featuredProjects = [
     id: "rail-trolley",
     title: "Adaptive-Gauge Unmanned Rail Trolley",
     tagline: "Full mechanical design from concept through prototyping — 600–1,676 mm gauge adaptability, £719.87 BOM",
-    date: "Sep 2025 – Jan 2026",
+    date: "Sep 2025 – Jan 2026 (MSc Group Design Project — University of Manchester)",
     context: "MSc Group Design Project — University of Manchester",
     role: "Mechanical Design Lead",
     team: "Team of 7; ownership ~50%",
@@ -61,9 +56,8 @@ export const featuredProjects = [
     results: [
       { metric: "Gauge range", value: "600–1,676 mm", target: "Min 3 standards" },
       { metric: "Traction force (FEA validated)", value: "68.2 N", target: ">50 N" },
-      { metric: "Total BOM cost", value: "£719.87", target: "<£1,000" },
+      { metric: "Total BOM cost", value: "£719.87", target: "£800" },
       { metric: "Total mass", value: "18.7 kg", target: "<25 kg" },
-      { metric: "Gauge change time", value: "<30 seconds", target: "<60 s" },
     ],
     impact: "Delivered a fully documented, prototype-validated mechanical design from requirements through FEA to physical build — demonstrating design-for-manufacture thinking.",
     categories: ["design", "prototyping", "rail"],
@@ -77,15 +71,15 @@ export const featuredProjects = [
     role: "Sole ML Architect & Data Engineer",
     team: "Solo; 100% ownership",
     domain: "Electric Vehicles / Thermal Engineering / Machine Learning / Digital Twins",
-    tools: ["Python", "PyTorch", "Optuna", "Pandas", "NumPy", "Plotly", "Streamlit"],
+    tools: ["Python", "TensorFlow/Keras + Streamlit", "Pandas", "NumPy", "Plotly"],
     methods: ["Mixture-of-Experts (MoE)", "Transformer encoder", "Gated routing network", "Optuna Bayesian HPO (200 trials)", "Physics-informed feature engineering"],
-    problem: "EV battery thermal management involves 5 fundamentally different cooling strategies (air, liquid, PCM, heat pipe, hybrid), each governed by different physics. A single ML model cannot capture all regimes; traditional CFD takes hours per simulation point.",
+    problem: "EV battery thermal management involves liquid-cooled BTMS with 6 thermal sensors, each governed by different physics. A single ML model cannot capture all regimes; traditional CFD takes hours per simulation point.",
     approach: "Architected a Mixture-of-Experts model where a gated routing network dynamically selects specialised expert sub-networks based on the cooling strategy, with a Transformer encoder capturing cross-variable dependencies.",
     results: [
-      { metric: "Overall R² (5 strategies)", value: "0.848", target: ">0.80" },
-      { metric: "Air cooling R²", value: "0.925", target: "Per-strategy" },
-      { metric: "BTMS power optimisation", value: "67.14 W", target: "Minimise" },
-      { metric: "Optuna trials completed", value: "200", target: "Exhaustive" },
+      { metric: "R on Tevap1", value: "0.848 (interpolation), with 90.38% of predictions within 2°C", target: ">0.80" },
+      { metric: "R on TCC", value: "0.933", target: "Maximise" },
+      { metric: "Dataset", value: "55,840 time-series observations", target: "Scale" },
+      { metric: "Forecast latency", value: "approximately 15–30 seconds for 500-step forecasts", target: "Sub-minute" },
       { metric: "Expert routing accuracy", value: "Strategy-specific gating validated", target: "Correct" },
     ],
     impact: "Demonstrated that physics-regime-aware ML architectures outperform monolithic models for multi-physics thermal problems — directly applicable to EV battery design optimisation.",
@@ -141,7 +135,27 @@ export const featuredProjects = [
   },
 ];
 
-export const aiProjects = [];
+export const aiProjects = [
+  {
+    id: "fsw-aeroelastic",
+    title: "Forward-Swept Composite Wing — ML-Enhanced Aeroelastic Optimisation",
+    tagline: "ML surrogates replace the physics solver for computationally efficient exploration.",
+    date: "Apr 2026 – Sep 2026",
+    context: "MSc Thesis — In Progress",
+    role: "Lead Researcher",
+    team: "Solo",
+    domain: "Aerospace / Composites / ML Surrogate Modelling",
+    tools: ["MATLAB", "Python", "PyTorch/TensorFlow", "Streamlit", "Git"],
+    methods: ["(1) MATLAB aeroelastic framework (CLPT + beam models + eigenvalue divergence analysis)", "(2) Dataset generation (10,000–50,000 samples)", "(3) FNN/CNN and gradient boosting surrogate models targeting 100–1000× speedup", "(4) Multi-objective optimisation (GA, Bayesian)", "(5) Streamlit dashboard for interactive design"],
+    problem: "Developing a machine learning-enhanced framework to optimise composite laminate lay-up sequences for aeroelastic divergence mitigation in forward-swept wings. The design space exceeds 10¹² configurations for a 20-ply wing — ML surrogates replace the physics solver for computationally efficient exploration.",
+    approach: "Applying ML to solve the >10¹² combinatorial lay-up design space to mitigate divergence.",
+    results: [
+      { metric: "Validation target", value: "NASA X-29 published FSW data", target: "Benchmark" }
+    ],
+    impact: "Currently in progress.",
+    categories: ["ai-ml", "aerospace", "composites"],
+  }
+];
 
 export const additionalProjects = [
   {

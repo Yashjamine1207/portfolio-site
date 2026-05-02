@@ -103,7 +103,7 @@ export default function Internships() {
                       Tools & Equipment
                     </p>
                     <div style={{ display: "flex", flexWrap: "wrap", gap: "0.35rem" }}>
-                      {intern.tools.map((t) => (
+                      {intern.tools?.map((t) => (
                         <span key={t} className="tag" style={{ fontSize: "0.65rem" }}>{t}</span>
                       ))}
                     </div>
@@ -115,7 +115,7 @@ export default function Internships() {
                       Key Contributions
                     </p>
                     <ul style={{ listStyle: "none", display: "grid", gap: "0.5rem" }}>
-                      {intern.highlights.map((h, i) => (
+                      {intern.highlights?.map((h, i) => (
                         <li
                           key={i}
                           style={{
